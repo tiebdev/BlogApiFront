@@ -1,0 +1,58 @@
+div 
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.navbar-custom {
+    background-color: #214252; 
+}
+.navbar-custom .navbar-nav .nav-link {
+    color: white;
+    background-color: #214252;
+}
+.navbar-custom .navbar-nav {
+    align-items: center; 
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-collapse {
+    display: flex;
+    align-items: center; 
+}
+.search-box {
+    display: flex;
+    align-items: center; 
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 20px;
+}
+.search-box input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.search-box .search-icon {
+    color: #214252; 
+    margin-right: 5px; 
+}
+.sidebar {
+    background-color: #214252;; 
+    border-right: 1px solid #ddd; 
+    color: white;
+    margin-left: 0; 
+    padding-left: 0; 
+}
+.collapse .search-form {
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    margin-top: 10px; 
+}
+.footer {
+    background-color: #214252; 
+    color: white; 
+    padding: 10px 0;
+    text-align: center;
+    font-size: 15px;
+}
