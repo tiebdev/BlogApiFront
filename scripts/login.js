@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
   // Mostrar los datos del formulario
   document.getElementById('formData').innerText = `Intentando iniciar sesión con: ${email} / ${password}`;
 
-  fetch('https://127.0.0.1:7097/api/Auth/login', {
+  fetch('https://localhost:7097/api/Auth/login', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
