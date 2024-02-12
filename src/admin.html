@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        <link rel="stylesheet" href="/css/base.css">
+        <link rel="stylesheet" href="/css/navbar.css">
+        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="/css/animations.css">
+        <link rel="stylesheet" href="/css/admin-panel.css"> 
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="/scripts/subirFotoPerfil.js"></script>
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #214252;">
+            <div class="container-fluid">
+                <a class="navbar-brand font-weight-bold text-white" href="/src/index.html">TechBlog</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                </div>
+                <span class="navbar-brand mb-0 h1">Panel de Administración</span>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <div class="row justify-content-center"> <!-- Centra los elementos horizontalmente -->
+                <!-- Zona de Carga de la Foto, centrada -->
+                <div class="col-12 d-flex justify-content-center"> <!-- Usa 'col-12' para que ocupe todo el ancho y centra su contenido -->
+                    <div class="card"> <!-- Controla el ancho de la tarjeta -->
+                        <img src="https://via.placeholder.com/150" class="card-img-top img-fluid" alt="Imagen del Artículo" id="articleImage" title="Haz clic para subir una imagen">
+                        <div class="card-body">
+                            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                            <i class="fas fa-arrow-up" title="Haz clic para subir una imagen"></i>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row justify-content-center mt-3"> <!-- Añade margen superior y centra los elementos horizontalmente -->
+                <!-- Acordeón de Administración-->
+                <div class="col-12 col-md-9"> <!-- 'col-md-9' hace que el acordeón ocupe el 75% del ancho en pantallas medianas y mayores -->
+                    <div class="accordion" id="adminAccordion">
+                        <!-- Sección Crear Nuevo Artículo -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingCreate">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCreate" aria-expanded="true" aria-controls="collapseCreate">
+                                    Crear Nuevo Artículo
+                                </button>
+                            </h2>
+                            <div id="collapseCreate" class="accordion-collapse collapse" aria-labelledby="headingCreate" data-bs-parent="#adminAccordion">
+                                <div class="accordion-body">
+                                    <form id="createPostForm">
+                                      <div class="mb-3">
+                                        <label for="titleInput" class="form-label">Título</label>
+                                        <input type="text" class="form-control" id="titleInput" placeholder="Ingresa el título del artículo" name="title" required>
+                                      </div>
+                                  
+                                      <div class="mb-3">
+                                        <label for="contentInput" class="form-label">Contenido</label>
+                                        <textarea class="form-control" id="contentInput" rows="5" placeholder="Escribe el contenido del artículo" name="content" required></textarea>
+                                      </div>                               
+                                  
+                                      <div class="mb-3">
+                                        <label for="categoriesInput" class="form-label">Categorías</label>
+                                        <input type="text" class="form-control" id="categoriesInput" placeholder="Categorías separadas por comas" name="categories">
+                                      </div>
+                                  
+                                      <div class="mb-3">
+                                        <label for="tagsInput" class="form-label">Etiquetas</label>
+                                        <input type="text" class="form-control" id="tagsInput" placeholder="Etiquetas separadas por comas" name="tags">
+                                      </div>
+                                  
+                                      <div class="mb-3">
+                                        <label for="imageUrlsInput" class="form-label">URLs de Imágenes</label>
+                                        <input type="text" class="form-control" id="imageUrlsInput" placeholder="URLs de imágenes separadas por comas" name="imageUrls">
+                                      </div>
+                                  
+                                      <div class="mb-3">
+                                        <label for="videoUrlsInput" class="form-label">URLs de Videos</label>
+                                        <input type="text" class="form-control" id="videoUrlsInput" placeholder="URLs de videos separadas por comas" name="videoUrls">
+                                      </div>
+                                  
+                                      <div class="mb-3">
+                                        <label for="fileUrlsInput" class="form-label">URLs de Archivos</label>
+                                        <input type="text" class="form-control" id="fileUrlsInput" placeholder="URLs de archivos separadas por comas" name="fileUrls">
+                                      </div>
+                                  
+                                      <button type="submit" class="btn btn-primary">Publicar Artículo</button>
+                                    </form>
+                                  </div>
+                                  
+                            </div>
+                        </div>
+        
+                        <!-- Sección Editar Artículo -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEdit">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEdit" aria-expanded="false" aria-controls="collapseEdit">
+                                    Editar Artículo
+                                </button>
+                            </h2>
+                            <div id="collapseEdit" class="accordion-collapse collapse" aria-labelledby="headingEdit" data-bs-parent="#adminAccordion">
+                                <div class="accordion-body">
+                                    <!-- Aquí irá la lista de artículos con opciones para editar -->
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Sección Eliminar Artículo -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDelete">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDelete" aria-expanded="false" aria-controls="collapseDelete">
+                                    Eliminar Artículo
+                                </button>
+                            </h2>
+                            <div id="collapseDelete" class="accordion-collapse collapse" aria-labelledby="headingDelete" data-bs-parent="#adminAccordion">
+                                <div class="accordion-body">
+                                    <!-- Aquí irá la lista de artículos con opciones para eliminar -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Pie de página -->
+        <footer class="footer">
+            <div class="footer">
+                <span>Derechos de Autor © 2024 TechBlog. Todos los derechos reservados.</span>
+            </div>
+        </footer>
+    
+        <!-- Enlaces a JavaScript, incluyendo Bootstrap JS y tu propio archivo JS -->
+    </body>
+</html>

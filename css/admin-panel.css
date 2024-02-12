@@ -1,0 +1,55 @@
+/* Ajustes opcionales para la tarjeta y el acordeón */
+.card-img-top {
+  height: auto; 
+  max-height: 150px;
+  cursor: pointer;
+}
+
+/* Estilos para el cuerpo de la tarjeta que contiene el icono */
+.card-body {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  color: #214252; 
+  cursor: pointer;
+  padding: 10px 0; 
+}
+
+/* Estilos específicos para el icono de flecha */
+.card-body i.fas.fa-arrow-up {
+  font-size: 1.5em; 
+}
+
+.dropdown-menu {
+  background-color: #214252 !important; 
+}
+
+.dropdown-menu .dropdown-item {
+  color: white !important; 
+  font-size: 18px;
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+  background-color:  #214252 !important; 
+}
+
+/* Elimina el borde de enfoque para el botón del acordeón en todos los estados */
+#adminAccordion .accordion-button:focus {
+  outline: 0 !important; 
+  box-shadow: none !important; 
+}
+
+/* Mantiene el color del borde consistente y elimina cualquier efecto de enfoque */
+#adminAccordion .accordion-button {
+  border-color: #214252 !important; 
+  outline: 0 !important; 
+  box-shadow: none !important; 
+}
+
+/* Establece el color del borde y estilos cuando el acordeón está activo */
+#adminAccordion .accordion-button:not(.collapsed) {
+  font-weight: bold; 
+  background-color: #fff !important; 
+  color: #000 !important; 
+  border-color: #214252 !important; 
+}

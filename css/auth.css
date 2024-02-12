@@ -1,0 +1,33 @@
+/* Centrar el contenido del formulario de login */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container h3 {
+    margin-top: 40px; /* Aumenta el espacio superior según sea necesario */
+    margin-bottom: 30px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .container input[type="email"],
+  .container input[type="password"] {
+    width: auto; /* Establece la anchura a 'auto' para permitir un tamaño más natural */
+    max-width: 400px; /* Establece una anchura máxima para evitar que los campos sean demasiado anchos */
+  }
+  
+  /* Estilos para el botón de iniciar sesión */
+  .container button[type="submit"] {
+    background-color: #214252; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    border: none; /* Elimina el borde del botón */
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+  .container button[type="submit"]:hover {
+    background-color: darken(#214252, 10%); /* Oscurece el botón ligeramente al pasar el mouse */
+  }
+  

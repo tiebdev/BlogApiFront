@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/admin-panel.css"> 
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #214252;">
+      <div class="container-fluid">
+        <a class="navbar-brand font-weight-bold text-white" href="/src/index.html">TechBlog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="/src/index.html">Inicio</a></li>
+            
+            <!-- Menú desplegable Temas -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="temasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Temas
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="temasDropdown">
+                <li><a class="dropdown-item" href="/src/analisis.html">Análisis</a></li>
+                <li><a class="dropdown-item" href="/src/blockchain.html">Blockchain</a></li>
+                <li><a class="dropdown-item" href="/src/ciberseguridad.html">Ciberseguridad</a></li>
+                <li><a class="dropdown-item" href="/src/eventos.html">Eventos</a></li>
+                <li><a class="dropdown-item" href="/src/ia.html">IA</a></li>
+                <li><a class="dropdown-item" href="/src/programacion.html">Programación</a></li>
+                <li><a class="dropdown-item" href="/src/tecnologia.html">Tecnología</a></li>
+                <li><a class="dropdown-item" href="/src/tutoriales.html">Tutoriales</a></li>
+              </ul>
+            </li>
+            
+            <!-- Nuevo ítem Colaboradores -->
+            <li class="nav-item"><a class="nav-link" href="/src/colaboradores.html">Colaboradores</a></li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    
+
+    <!-- Imagen de la Sección -->
+    <div class="page-header" style="background-image: url('/media/ciber-fondo.jpg');"></div>  
+
+    <!-- Sección del Título -->
+    <div class="page-title">
+      <h1>Ciberseguridad: Protege Tu Mundo Digital</h1>
+    </div>
+    
+    <!-- Pie de página -->
+    <footer class="footer">
+      <div class="footer">
+        <span>Derechos de Autor © 2024 TechBlog. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+  </body>
+</html>

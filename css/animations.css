@@ -1,0 +1,55 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(100%); /* Comienza la animación desde abajo */
+    opacity: 0; /* Comienza con el elemento completamente transparente */
+  }
+  to {
+    transform: translateY(0); /* Termina la animación en su posición original */
+    opacity: 1; /* Termina con el elemento completamente opaco */
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5); /* Comienza la animación con el elemento a la mitad de su tamaño */
+    opacity: 0; /* Comienza con el elemento completamente transparente */
+  }
+  to {
+    transform: scale(1); /* Termina la animación con el elemento a su tamaño normal */
+    opacity: 1; /* Termina con el elemento completamente opaco */
+  }
+}
+
+.page-title h1 {
+  animation: slideUp 0.5s ease-out forwards; /* Ajusta la duración y el timing según prefieras */
+}
+
+.page-header {
+  background-size: contain;
+  color: black;
+  text-align: center;
+  padding: 50px 20px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  background-color: white; 
+  text-align: center; 
+  padding: 20px 0; 
+}
+
+.page-title h1 {
+  color: black; 
+  font-weight: bold; 
+  margin: 0; 
+  font-size: 2.5rem; 
+}
+
+.page-header {
+  padding: 50px 20px; 
+  background-size: cover; 
+  color: white; 
+  text-align: center; 
+}

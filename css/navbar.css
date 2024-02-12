@@ -1,0 +1,76 @@
+.navbar-brand {
+  font-weight: bold;
+  animation: zoomIn 0.5s ease-out forwards;
+}
+
+/* Estilos de la navbar */
+.navbar-dark .navbar-nav .nav-link,
+.navbar .btn .fas.fa-search {
+  color: #fff; /* Asegura que los ítems y el icono de la lupa sean blancos */
+}
+  
+/* Estilo para el icono del menú hamburguesa en blanco */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+  
+/* Evitar el cambio de color de fondo en el botón de la lupa al pasar el ratón */
+.navbar .btn:hover {
+  background-color: transparent; /* Mantiene el fondo transparente al pasar el ratón */
+  border-color: white; 
+}
+
+/* Centrar los ítems de la navbar en todos los tamaños de pantalla */
+.navbar-nav {
+  display: flex; /* Habilita flexbox */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+  
+/* Asegurar que los ítems de la navbar estén centrados incluso después de expandirse */
+.navbar-collapse {
+  justify-content: center;
+}
+
+/* Estilos adicionales para el borde del botón de búsqueda, si es necesario */
+.navbar .btn {
+  border-color: white; 
+}
+
+/* Estilos responsivos para la navbar */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item,
+  .navbar-nav .nav-link {
+    text-align: center;
+    padding: 0; 
+  }
+
+  .navbar-nav .nav-item + .nav-item { 
+    margin-top: 10px; 
+  }
+
+  .form-inline {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .navbar .form-control {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
