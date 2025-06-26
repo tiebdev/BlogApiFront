@@ -33,7 +33,7 @@ El diseño del frontend está optimizado para una experiencia fluida en cualquie
 
 ## 📬 Contacto
 Si tienes alguna consulta o quieres colaborar en el frontend, puedes contactarme a través de:  
-📩 **Email:** [tieb.dev@gmail.com](mailto:tieb.dev@gmail.com)  
+📩 **Email:** [ridouan@tieb.dev](mailto:tieb.dev@gmail.com)  
 🔗 **LinkedIn:** [linkedin.com/in/ridouantieb](https://linkedin.com/in/ridouantieb)  
 
 ---
